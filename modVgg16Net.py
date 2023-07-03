@@ -2,7 +2,7 @@ from keras.layers import Conv2D, Flatten, Dense, MaxPooling2D, Dropout, Activati
 from keras.models import Sequential
 from keras import regularizers
 from keras.optimizers import SGD
-class Vgg16M:
+class Vgg16NetM:
   @staticmethod
   def build(width, height, depth, classes):
     inputShape = (height, width, depth)
