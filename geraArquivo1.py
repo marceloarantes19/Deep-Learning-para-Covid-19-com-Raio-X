@@ -1,4 +1,6 @@
 import csv
+import pandas as pd
+import io
 class GeraArquivo:
   def geraHistorico(nome, h):
     f = open(nome, 'w', newline='', encoding='utf-8')
@@ -27,3 +29,4 @@ class GeraArquivo:
 
     # Recomendado: feche o arquivo
     f.close()
+  

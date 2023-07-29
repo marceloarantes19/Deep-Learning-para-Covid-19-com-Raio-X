@@ -12,6 +12,5 @@ class ShallowNet:
     model.add(Flatten())
     model.add(Dense(classes))
     model.add(Activation("softmax"))
-    model.compile(loss='categorical_crossentropy', optimizer=SGD(lr=0.1, momentum=0.0, decay=0.0), metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer=SGD(lr=0.1),metrics=['accuracy'])
     return model
-    
